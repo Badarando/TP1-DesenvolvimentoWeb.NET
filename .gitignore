@@ -1,0 +1,12 @@
+# Arquivos gerados pelo C# e .NET
+**/bin/
+**/obj/
+
+# Arquivos temporários do Visual Studio
+.vs/
+*.user
+*.suo
+
+# Configurações locais
+*.userosscache
+*.sln.docstates

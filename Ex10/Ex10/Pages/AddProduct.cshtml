@@ -1,0 +1,24 @@
+﻿@page
+@model Ex10.Pages.AddProductModel
+@{
+}
+
+<h1>Cadastro de Produto</h1>
+
+<form method="post">
+    <label>Nome do produto:</label>
+    <input type="text" name="Nome" />
+
+    <label>Preço:</label>
+    <input type="number" name="Preco" step="0.01" />
+
+    <button type="submit">Cadastrar</button>
+</form>
+
+@if (Request.Method == "POST")
+{
+    <h2>Produto cadastrado com sucesso!</h2>
+
+    <p>Nome: @Model.Nome</p>
+    <p>Preço: R$ @Model.Preco.ToString("N2")</p>
+}
